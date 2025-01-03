@@ -4,7 +4,7 @@ from PIL import Image, ImageTk #Importar la librería Pillow para colocar iágen
 import random #Librería random, será útil para decidir 
 
 class SplashScreen: #Pantalla de inicio que se ejecuta durante unos segundos.
-    def __init__(self, master): #Método para la patalla de inicio
+    def __init__(self, master): #Método splash para la patalla de inicio
         self.master = master
         self.master.title("Cargando...")
         self.master.geometry("400x400")
@@ -12,7 +12,7 @@ class SplashScreen: #Pantalla de inicio que se ejecuta durante unos segundos.
 
         # Imagen del splash
         image_path = r"C:\\Users\\user\\Documents\\Trabajosphyton\\Ahorcado\\splash_image.png"  #Imagen que aparece en la pantalla de carga
-        original_image = Image.open(image_path).resize((400, 400))
+        original_image = Image.open(image_path).resize((400, 400)) #Ajustar tamaño de imagen con Pillow
         self.image = ImageTk.PhotoImage(original_image)
         self.image_label = tk.Label(master, image=self.image, bg="white")
         self.image_label.pack()
@@ -27,7 +27,7 @@ class SplashScreen: #Pantalla de inicio que se ejecuta durante unos segundos.
         main_window.mainloop()
 
 class HangmanMenu: #Pantalla de menú
-    def __init__(self, master):
+    def __init__(self, master): #Método para el menú
         self.master = master
         self.master.title("Menú - Ahorcado")
         self.master.geometry("400x600")
@@ -44,7 +44,7 @@ class HangmanMenu: #Pantalla de menú
         self.title_label = tk.Label(master, text="¡Ahorcado!", font=("Arial", 24, "bold"), bg="white", fg="black")
         self.title_label.pack(pady=20)
 
-        # Botones
+        # Botones de los modos de juego
         button_style = {
             "font": ("Arial", 14, "bold"),
             "bg": "#007BFF",
@@ -69,20 +69,20 @@ class HangmanMenu: #Pantalla de menú
 
         tk.Button(master, text="Salir", command=self.master.quit, **button_style).pack(pady=20)
 
-    def start_game(self, mode):
+    def start_game(self, mode): #Método para iniciar el juego sin importar el modo seleccionado.
         self.master.withdraw()
         game_window = tk.Toplevel(self.master)
         HangmanGame(game_window, mode)
 
-class HangmanGame:
+class HangmanGame: #Clase donde se ejecuta el juego
     def __init__(self, master, mode):
         self.master = master
         self.master.title(f"Modo - {mode.capitalize()}")
         self.master.geometry("400x500")
         self.master.configure(bg="white")
 
-        # Inicialización
-        self.words = {
+        # Palabras que aparecerán en la partida (una aparecerá aleatoriamente)
+        self.words = { 
             "classic": ["amor", "agua", "arbol", "amigo", "casa", "cielo", "ciudad", "comida", "corazon", "dinero",
             "dia", "escuela", "familia", "felicidad", "fiesta", "flor", "fuego", "gente", "guerra", "historia",
             "hombre", "jardin", "juego", "libro", "luz", "mañana", "mujer", "mundo", "niño", "noche",
@@ -95,16 +95,16 @@ class HangmanGame:
             "sports": ["futbol", "tenis", "natacion", "baloncesto", "beisbol", "voleibol", "rugby", "boxeo", "gimnasia", "atletismo", "ciclismo", "escalada", "esgrima", "karate", "taekwondo", "judo", "surf", "esqui", "snowboard", "yoga", "ejercicio", "golf", "hockey", "futsal", "badminton", "pingpong", "lucha", "cricket", "motocross", "carrera", "halterofilia", "futbolamericano", "esquiacuatico", "paracaidismo", "balonmano", "waterpolo", "patinaje", "hipismo", "vela", "barcelona", "emelec", "aucas", "nacional", "liga", "deportivoquito", "independientedelvalle"]
         }.get(mode, ["amor", "agua", "arbol"])
 
-        self.word_to_guess = random.choice(self.words)
+        self.word_to_guess = random.choice(self.words) #Seleccionar una palabra a través de la biblioteca random
         self.guessed_letters = []
         self.attempts = 6
 
-        # Estilos
+        # Estilos para los botones
         label_style = {"font": ("Arial", 24), "bg": "white", "fg": "black"}
         small_label_style = {"font": ("Arial", 14), "bg": "white", "fg": "black"}
         button_style = {"font": ("Arial", 14, "bold"), "bg": "#007BFF", "fg": "white"}
 
-        # Widgets
+        # Widgets y botones en la ventana de partida
         self.word_label = tk.Label(master, text="", **label_style)
         self.word_label.pack(pady=20)
 
@@ -120,7 +120,7 @@ class HangmanGame:
         self.reset_button = tk.Button(master, text="Reiniciar", command=self.reset_game, **button_style)
         self.reset_button.pack(pady=10)
 
-        # Dibujo inicial del ahorcado
+        # Dibujar la figura del ahorcado
         self.canvas = tk.Canvas(master, width=300, height=300, bg="white", highlightthickness=0)
         self.canvas.create_line(50, 250, 250, 250, width=4)
         self.canvas.create_line(100, 250, 100, 50, width=4)
@@ -131,14 +131,14 @@ class HangmanGame:
         self.update_word_display()
         self.update_attempts_display()
 
-    def update_word_display(self):
+    def update_word_display(self): #Modificar la palabra cuando se acierta una letra
         display_word = " ".join([letter if letter in self.guessed_letters else "_" for letter in self.word_to_guess])
         self.word_label.config(text=display_word)
 
-    def update_attempts_display(self):
+    def update_attempts_display(self): #Restar intentos cada intento
         self.attempts_label.config(text=f"Intentos restantes: {self.attempts}")
 
-    def guess_letter(self):
+    def guess_letter(self): #Método que registra cada intento
         letter = self.letter_entry.get().strip().lower()
         if letter and letter not in self.guessed_letters:
             if letter in self.word_to_guess:
@@ -158,7 +158,7 @@ class HangmanGame:
 
         self.letter_entry.delete(0, tk.END)
 
-    def reset_game(self):
+    def reset_game(self): #Método para reiniciar la partida con una nueva palabra.
         self.word_to_guess = random.choice(self.words)
         self.guessed_letters = []
         self.attempts = 6
