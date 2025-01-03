@@ -1,32 +1,32 @@
-import tkinter as tk
+import tkinter as tk #Librería Tkinyer
 from tkinter import messagebox
-from PIL import Image, ImageTk
-import random
+from PIL import Image, ImageTk #Importar la librería Pillow para colocar iágenes y ajustar sus tamaños.
+import random #Librería random, será útil para decidir 
 
-class SplashScreen:
-    def __init__(self, master):
+class SplashScreen: #Pantalla de inicio que se ejecuta durante unos segundos.
+    def __init__(self, master): #Método para la patalla de inicio
         self.master = master
         self.master.title("Cargando...")
         self.master.geometry("400x400")
         self.master.configure(bg="white")
 
         # Imagen del splash
-        image_path = r"C:\\Users\\user\\Documents\\Trabajosphyton\\Ahorcado\\splash_image.png"  # Cambia esta ruta a tu imagen
+        image_path = r"C:\\Users\\user\\Documents\\Trabajosphyton\\Ahorcado\\splash_image.png"  #Imagen que aparece en la pantalla de carga
         original_image = Image.open(image_path).resize((400, 400))
         self.image = ImageTk.PhotoImage(original_image)
         self.image_label = tk.Label(master, image=self.image, bg="white")
         self.image_label.pack()
 
         # Configuración para cerrar el splash después de 4 segundos
-        self.master.after(4000, self.close_splash)  # 4000 ms = 4 segundos
+        self.master.after(4000, self.close_splash)  # 4000 ms = 4 segundos #Llamar al método close splash luego de pasados unos segundos
 
-    def close_splash(self):
+    def close_splash(self): #Método para cerrar la pantalla de carga
         self.master.destroy()
         main_window = tk.Tk()
         HangmanMenu(main_window)
         main_window.mainloop()
 
-class HangmanMenu:
+class HangmanMenu: #Pantalla de menú
     def __init__(self, master):
         self.master = master
         self.master.title("Menú - Ahorcado")
