@@ -14,10 +14,15 @@
 - [Examen de Unidad: Mi proyecto personal]
   
 
-## Proyecto personal de unidad: Ahorcado
+## Mi proyecto personal de unidad
 
+## EL AHORCADO
 
 Buenas a todos, vengo a presentar la que será mi aplicación de proyecto personal, un juego de ahorcado sencillo, donde deberemos adivinar una palabra en pocos intentos. La aplicación presentará una interfaz sencilla y algunos modos de juego. 📲
 
-La aplicación y su código aún están en desarrollo, por lo que se publicarán más tarde.
+¿De que trata este juego?
+
+De algo muy sencillo, del juego de ahorcado, uno de los más conocidos a nivel mundial, el clásico juego de adivinar una palabra con letras antes de que la figura del ahorcado nos indique que lo hemos intentado muchas veces.
+
+El tradicional juego de papel que muchas veces se ha jugado en escuelas y colegios, ahora llevado a una sencilla aplicación en el lenguaje de programación Python y que también es posible gracias a varias librerías para el mismo lenguaje Python.
 
