@@ -15,6 +15,7 @@
   
 
 # **Mi Proyecto Personal: EL AHORCADO** 🎮
+![e20829c7-bbf8-45f2-b289-0db91c157b7e](https://github.com/user-attachments/assets/4c3edae2-15ba-4472-869b-bfcc25887953)
 
 ¡Hola a todos! 👋  
 Quiero presentarles **mi aplicación de proyecto personal**, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
