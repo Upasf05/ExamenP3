@@ -15,8 +15,6 @@
   
 
 # **Mi Proyecto Personal: EL AHORCADO** 🎮
-![e20829c7-bbf8-45f2-b289-0db91c157b7e](https://github.com/user-attachments/assets/4c3edae2-15ba-4472-869b-bfcc25887953)
-
 ¡Hola a todos! 👋  
 Quiero presentarles **mi aplicación de proyecto personal**, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
 
@@ -40,6 +38,8 @@ El objetivo es simple: **adivinar una palabra letra por letra** antes de que com
 ---
 
 ## **¿Cómo fue hecho?** 🛠️  
+![e20829c7-bbf8-45f2-b289-0db91c157b7e](https://github.com/user-attachments/assets/4c3edae2-15ba-4472-869b-bfcc25887953)
+
 Este proyecto utiliza el lenguaje **Python** y varias librerías populares:  
 
 ### **Librerías utilizadas y su función**  
@@ -65,7 +65,7 @@ Las categorías y sus temáticas son:
 
 -Tecnología y programación: un modo más técnicos para expertos de informática y de la programación, con palabras como Windows, Python, Android, Java, etc.
 
--Ciencia: un modo para amantes de la ciencia con tperminos de química, biología y el cuerpo humano
+-Ciencia: un modo para amantes de la ciencia con palabras relacionadas a la química, biología y el cuerpo humano
 
 -Animales: un modo más sencillos con algunos animales conocidos.
 
@@ -80,6 +80,7 @@ La aplicación es un prototipo, por lo que varios de estos modos pueden cambiars
 ## **Instalación y ejecución** 🚀  
 
 ### **Requisitos del sistema**  
-Este juego no necesita una PC gamer de alta gama, puede correr en cualquier computadora/ordenador, solo hay que realizar. bien la instalación 😂
+Este juego no necesita una PC gamer de alta gama, puede correr en cualquier computadora/ordenador, solo hay que realizar correctamente la instalación 😂
 ### **Pasos para ejecutar el proyecto**  
-1. Descargar los archivos de este repositorio o el rar
+1. Descargar los archivos de este repositorio image, splash, image y archivo, o el rar
+2. Juntar los archivos en una sola carpeta
