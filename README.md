@@ -15,8 +15,8 @@
   
 
 # **Mi Proyecto Personal: EL AHORCADO** 🎮
-¡Hola a todos! 👋  
-Quiero presentarles **mi aplicación de proyecto personal**, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
+¡Hola a todos los presentes, profesor y compañeros! 👋  
+Quiero presentarles **mi aplicación de proyecto personal** para esta unidad del semestre, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
 
 ---
 
@@ -52,20 +52,26 @@ Este proyecto utiliza el lenguaje **Python** y varias librerías populares:
 
 3. **Pillow (PIL)**  
    - Permite redimensionar imágenes para adaptarlas a la interfaz del juego.  
-   - Es la solución para las limitaciones de `PhotoImage` de Tkinter, que no permite ajustar el tamaño de las imágenes.  
+   - Es la solución para las limitaciones de `PhotoImage` de Tkinter, que no permite ajustar el tamaño de las imágenes.
+   - Este módulo no viene instalado por defecto en Python, debe instalarse a través del comando pip install pillow en la consola CMD de Windows.
 
 ---
 ## **Conocimientos de unidad aplicados**
-1. Se creó una interfaz de usuario (GUI) amigable 
+1. Se creó una interfaz de usuario (GUI) amigable para todo público.
+2. Se creó una animación de splash screen con una imagen adjunta que aparece al ejecutar la aplicación antes del menú principal.
+3. Se adjuntó una imagen en el menú principal de la aplicación.
+4. Se creó una interfaz vertical de estilo Android.
+
+Con la implementación de estos conocimientos dentro del proyecto demuestro mi conocimiento sobre la programación de aplicaciones de estilo móvil, que fue el tema principal de esta unidad, creando una aplicación simple por dentro (código) y por afuera (aplicación final y su funcionamiento), y que además prácticas y cuyo código puede llevarse a otros lenguajes como Java o Kotlin.
 ## **Modos de juego disponibles** 🎲  
 Lo más destacado de esta aplicación es que cuenta con **varios modos de juego temáticos**, donde las palabras a adivinar pertenecen a diferentes categorías. ¡Esto garantiza que cada partida sea una experiencia única!
 
 Las categorías y sus temáticas son:
 -Clásico: con palabras casuales y conocidas, es por mucho el modo más fácil.
 
--Tecnología y programación: un modo más técnicos para expertos de informática y de la programación, con palabras como Windows, Python, Android, Java, etc.
+-Tecnología y programación: un modo más técnico para expertos de informática y de la programación, con palabras como Windows, Python, Android, Java, etc.
 
--Ciencia: un modo para amantes de la ciencia con palabras relacionadas a la química, biología y el cuerpo humano
+-Ciencia: un modo para amantes de la ciencia con palabras relacionadas a la química, biología y el cuerpo humano.
 
 -Animales: un modo más sencillos con algunos animales conocidos.
 
@@ -83,4 +89,6 @@ La aplicación es un prototipo, por lo que varios de estos modos pueden cambiars
 Este juego no necesita una PC gamer de alta gama, puede correr en cualquier computadora/ordenador, solo hay que realizar correctamente la instalación 😂
 ### **Pasos para ejecutar el proyecto**  
 1. Descargar los archivos de este repositorio image, splash, image y archivo, o el rar
-2. Juntar los archivos en una sola carpeta
+2. Juntar los archivos en una sola carpeta, o descomprimir el RAR si se descargó este.
+3. Abrir el archivo exe.
+4. Jugar, divertirse y experimentar.
