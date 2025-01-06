@@ -1,4 +1,4 @@
-import tkinter as tk #Librería Tkinyer
+import tkinter as tk #Librería Tkinter
 from tkinter import messagebox
 from PIL import Image, ImageTk #Importar la librería Pillow para colocar iágenes y ajustar sus tamaños.
 import random #Librería random, será útil para decidir 
