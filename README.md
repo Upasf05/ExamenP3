@@ -14,23 +14,71 @@
 - [Examen de Unidad: Mi proyecto personal]
   
 
-## Mi proyecto personal de unidad
+# **Mi Proyecto Personal: EL AHORCADO** 🎮
 
-## EL AHORCADO
+¡Hola a todos! 👋  
+Quiero presentarles **mi aplicación de proyecto personal**, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
 
-Buenas a todos, vengo a presentar la que será mi aplicación de proyecto personal, un juego de ahorcado sencillo, donde deberemos adivinar una palabra en pocos intentos. La aplicación presentará una interfaz sencilla y algunos modos de juego. 📲
+---
 
-¿De que trata este juego?
+## **¿De qué trata este juego?** 🤔  
 
-De algo muy sencillo, del juego de ahorcado, uno de los más conocidos a nivel mundial, el clásico juego de adivinar una palabra con letras antes de que la figura del ahorcado nos indique que lo hemos intentado muchas veces.
+![image](https://github.com/user-attachments/assets/05d7d988-b999-4115-91b6-99f0302880f4)
 
-El tradicional juego de papel que muchas veces se ha jugado en escuelas y colegios, ahora llevado a una sencilla aplicación en el lenguaje de programación Python y que también es posible gracias a varias librerías para el mismo lenguaje Python.
+El **Ahorcado** es uno de los juegos más clásicos y conocidos a nivel mundial.  
+El objetivo es simple: **adivinar una palabra letra por letra** antes de que completes la figura del ahorcado y pierdas la partida. Este juego, que muchos de nosotros hemos disfrutado en papel durante nuestros días de escuela, ahora ha sido llevado al mundo digital mediante una **aplicación hecha en Python**.
 
-## ¿Qué caracteriza a este proyecto y cómo fue hecho?
-El proyecto se caracteriza por mostrar una aplicación simple que muestra una versión ersonalizada del juego de ahorcado, el clásico juego de papel de adviniar una palabra. Está hecho con el lenguaje de programación Python y la librería Tkinter, se utilizaron también las librerías Random y PIL. 
+---
 
-¿Que hace cada librería usada?
+## **Características principales del proyecto** ✨  
+- Una versión digital del clásico juego de papel.  
+- Interfaz sencilla e intuitiva para todos los usuarios.  
+- Varios modos de juego temáticos que le dan un toque especial.  
+- Desarrollado con el lenguaje de programación **Python** y librerías adicionales.  
 
--Random: permite arrojar valores aleatorios, lo que en el juego de ahorcado se usa para tirar una palabra aleatoria a adivinar cada partida.
+---
 
--PIL: Conocida como Pillow, esta librería permite colocar imagenes y ajustar su tamaño. Es útil ya que la funciona preinstalada de Tkinter PhotoImage no permite redimensionar el tamaño de imágenes.
+## **¿Cómo fue hecho?** 🛠️  
+Este proyecto utiliza el lenguaje **Python** y varias librerías populares:  
+
+### **Librerías utilizadas y su función**  
+1. **Tkinter**  
+   - Crea la interfaz gráfica de la aplicación.  
+   - Facilita la interacción entre el usuario y el programa.  
+
+2. **Random**  
+   - Genera palabras aleatorias para que cada partida sea única con una palabra distinta.  
+
+3. **Pillow (PIL)**  
+   - Permite redimensionar imágenes para adaptarlas a la interfaz del juego.  
+   - Es la solución para las limitaciones de `PhotoImage` de Tkinter, que no permite ajustar el tamaño de las imágenes.  
+
+---
+## **Conocimientos de unidad aplicados**
+1. Se creó una interfaz de usuario (GUI) amigable 
+## **Modos de juego disponibles** 🎲  
+Lo más destacado de esta aplicación es que cuenta con **varios modos de juego temáticos**, donde las palabras a adivinar pertenecen a diferentes categorías. ¡Esto garantiza que cada partida sea una experiencia única!
+
+Las categorías y sus temáticas son:
+-Clásico: con palabras casuales y conocidas, es por mucho el modo más fácil.
+
+-Tecnología y programación: un modo más técnicos para expertos de informática y de la programación, con palabras como Windows, Python, Android, Java, etc.
+
+-Ciencia: un modo para amantes de la ciencia con tperminos de química, biología y el cuerpo humano
+
+-Animales: un modo más sencillos con algunos animales conocidos.
+
+-Geografía y países: modo con accidentes geográficos y distintos países.
+
+-Deportes: modo con nombres de deportes y equipos de fútbol.
+
+La aplicación es un prototipo, por lo que varios de estos modos pueden cambiarse o se pueden agregar nuevos en el futuro.
+
+---
+
+## **Instalación y ejecución** 🚀  
+
+### **Requisitos del sistema**  
+Este juego no necesita una PC gamer de alta gama, puede correr en cualquier computadora/ordenador, solo hay que realizar. bien la instalación 😂
+### **Pasos para ejecutar el proyecto**  
+1. Descargar los archivos de este repositorio o el rar
