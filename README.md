@@ -15,6 +15,8 @@
   
 
 # **Mi Proyecto Personal: EL AHORCADO** 🎮
+![96ab49a1-c217-447b-90cc-b17f8c1aad71](https://github.com/user-attachments/assets/533937c3-692b-45b9-a97b-4af9510b5dc7)
+
 ¡Hola a todos los presentes, profesor y compañeros! 👋  
 Quiero presentarles **mi aplicación de proyecto personal** para esta unidad del semestre, un juego de ahorcado sencillo y divertido donde deberemos adivinar una palabra antes de que sea demasiado tarde. 🕹️ La aplicación cuenta con una **interfaz simple y fácil de usar** y varios **modos de juego temáticos** para darle un toque personalizado. 📲
 
@@ -57,6 +59,8 @@ Este proyecto utiliza el lenguaje **Python** y varias librerías populares:
 
 ---
 ## **Conocimientos de unidad aplicados**
+![d51a826a-8a31-447b-9141-ab1ed7eaa4dc](https://github.com/user-attachments/assets/c302d143-9d31-438d-bdda-4e903cbed011)
+
 1. Se creó una interfaz de usuario (GUI) amigable para todo público.
 2. Se creó una animación de splash screen con una imagen adjunta que aparece al ejecutar la aplicación antes del menú principal.
 3. Se adjuntó una imagen en el menú principal de la aplicación.
@@ -79,7 +83,7 @@ Las categorías y sus temáticas son:
 
 -Deportes: modo con nombres de deportes y equipos de fútbol.
 
-La aplicación es un prototipo, por lo que varios de estos modos pueden cambiarse o se pueden agregar nuevos en el futuro.
+La aplicación es un prototipo, por lo que varios de estos modos pueden cambiarse, o se pueden agregar nuevos en el futuro.
 
 ---
 
