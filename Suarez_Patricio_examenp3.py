@@ -1,6 +1,6 @@
 import tkinter as tk #Librería Tkinter
 from tkinter import messagebox
-from PIL import Image, ImageTk #Importar la librería Pillow para colocar iágenes y ajustar sus tamaños.
+from PIL import Image, ImageTk #Importar la librería Pillow para colocar imágenes y ajustar sus tamaños.
 import random #Librería random, será útil para decidir 
 
 class SplashScreen: #Pantalla de inicio que se ejecuta durante unos segundos.
